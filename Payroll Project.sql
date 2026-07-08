@@ -27,20 +27,45 @@ VALUE("EMP002","Aisha Khan","Female","Marketing","Mumbai","52000.00","2600.00","
 ("EMP023","Kavya Reddy","Female","Sales","Hyderabad","57000.00","2800.00","1700.00","700","10.00","1997-10-09","2022-11-28","09:55:20","Excel,SQL",1,"2026-07-06 18:04:45"),
 ("EMP024","Harsh Verma","Male","ReseacH","Chandigarh","74000.00","3800.00","2300.00","1300","11.00","1995-07-30","2021-02-18","08:35:40","SQL,R",1,"2026-07-06 18:04:45"),
 ("EMP025","Divya Menon","Female","Purchase","Chennai","55000.00","2700.00","1700.00","500","10.00","1996-11-27","2022-06-22","09:10:50","Excel,Power BI",1,"2026-07-06 18:04:45"),
-("EMP026","Nitin Agarwal","Male","Support","Jaipur","48000.00","2300.00","1500.00","300","8.50","1999-09-04","2024-08-12","10:05:25","Excel",1,"2026-07-06 18:04:45");
-SELECT * FROM employees;
+("EMP026","Nitin Agarwal","Male","Support","Jaipur","48000.00","2300.00","1500.00","300","8.50","1999-09-04","2024-08-12","10:05:25","Excel",1,"2026-07-06 18:04:45");*/
+/*SELECT * FROM employees;
 UPDATE employees
 SET employee_id=241
 WHERE employee_code="EMP001";
 SELECT * FROM employees;
 SELECT employee_code,full_name,department FROM employees;
-SELECT * FROM employees;
-SELECT * FROM employees
+SELECT * FROM employees;*/
+/*SELECT * FROM employees
 WHERE city="Pune";
 SELECT * FROM employees
 WHERE salary>25000;
 SELECT * FROM employees
-ORDER BY full_name;*/
+ORDER BY full_name DESC
+
+SELECT * FROM employees;
+SELECT employee_id,full_name,salary,HRA,DA,Bouns,Tax_Rate ,
+(salary+HRA+DA+Bouns) AS Gross_Salary,
+((salary+HRA+DA+Bouns)*Tax_Rate/100) AS Tax_Amount,
+((salary+HRA+DA+Bouns)-(salary+HRA+DA+Bouns)*Tax_Rate/100) AS Net_Salar
+FROM employees
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
